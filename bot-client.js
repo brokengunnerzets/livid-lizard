@@ -3,17 +3,17 @@ const Discord = require('discord.js');
 const { discordToken } = require('./configs');
 const controller = require('./bot-controller');
 
-const start = () => {
+const start = async () => {
 	const client = new Discord.Client();
-	
+
 	client.on("ready", () => {
 	  console.log("I am ready!");
 	});
 
-	client.on("message", (message) => {
+	client.on("message", async (message) => {
 	  	try {
-		  	const result = controller.handle(message);
-		  	console.log(result);	
+		  	const result = await controller.handle(message);
+		  	console.log(result);
 		} catch(e) {
 			console.log(e);
 		}

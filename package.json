@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/brokengunnerzets/livid-lizard#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "discord.js": "^11.3.2"
   }
 }
