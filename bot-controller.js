@@ -1,5 +1,5 @@
 const TRIGGER = '!senpai ';
-const KNOWN_COMMANDS = ['incroyable', 'notice-me', 'help-me'];
+const KNOWN_COMMANDS = ['incroyable', 'notice-me', 'help-me', 'd-e-l-e-t-e-t-h-i-s'];
 
 const PRINT_COMMANDS = () => {
 	const cmds = KNOWN_COMMANDS.reduce((acc, cur) => {
@@ -40,6 +40,13 @@ module.exports = {
 			    file: "https://media.giphy.com/media/Nx0rz3jtxtEre/giphy.gif" // Or replace with FileOptions object
 			});
 			return 'Noticed';
+		}
+
+		if (command === 'd-e-l-e-t-e-t-h-i-s') {
+			message.channel.send(`Let me think`, {
+			    file: "https://media.giphy.com/media/l3vRkn7F5yV6wFBlu/giphy.gif" // Or replace with FileOptions object
+			});
+			return 'DeleteThis';
 		}
 
 		if (command === 'incroyable') {
