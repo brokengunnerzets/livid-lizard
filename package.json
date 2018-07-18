@@ -1,0 +1,30 @@
+{
+  "name": "livid-lizard",
+  "version": "1.0.0",
+  "description": "Incredible discord bot",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brokengunnerzets/livid-lizard.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "brokengunnerzets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brokengunnerzets/livid-lizard/issues"
+  },
+  "homepage": "https://github.com/brokengunnerzets/livid-lizard#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
